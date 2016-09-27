@@ -1,24 +1,22 @@
-CC=clang
-CFLAGS=-I.
-DEPS = 
+all:525Assignment1_1 525Assignment1_2
 
-dberror.o: dberror.c
-	cc -o dberror.o -c dberror.c
+525Assignment1_1 : dberror.o storage_mgr.o test_assign1_1.o
+	gcc dberror.o storage_mgr.o test_assign1_1.o -o 525Assignment1_1
 
-storage_mgr.o: storage_mgr.c
-	cc -o storage_mgr.o -c storage_mgr.c
+525Assignment1_2 : dberror.o storage_mgr.o test_assign1_2.o
+	gcc dberror.o storage_mgr.o test_assign1_2.o -o 525Assignment1_2
 
-test_assign1_1.o: test_assign1_1.c
-	cc -o test_assign1_1.o -c test_assign1_1.c
+dberror.o: dberror.c dberror.h
+	gcc -o dberror.o -c dberror.c
 
-test_assign1_2.o: test_assign1_2.c
-	cc -o test_assign1_2.o -c test_assign1_2.c
+storage_mgr.o: storage_mgr.c storage_mgr.h
+	gcc -o storage_mgr.o -c storage_mgr.c
 
-assign1_1: test_assign1_1.o storage_mgr.o dberror.o
-		cc -o assign1_1 test_assign1_1.o storage_mgr.o dberror.o -I.
+test_assign1_1.o: test_assign1_1.c test_helper.h
+	gcc -o test_assign1_1.o -c test_assign1_1.c
 
-assign1_2: test_assign1_2.o storage_mgr.o dberror.o
-		cc -o assign1_2 test_assign1_2.o storage_mgr.o dberror.o -I.
+test_assign1_2.o: test_assign1_2.c test_helper.h
+	gcc -o test_assign1_2.o -c test_assign1_2.c
 
 clean:
-	rm assign1_1 assign1_2 test_assign1_1.o test_assign1_2.o storage_mgr.o dberror.o
+	rm -rf *.o 525Assignment1 525Assignment1_2

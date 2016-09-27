@@ -27,6 +27,12 @@ typedef int RC;
 #define RC_IM_N_TO_LAGE 302
 #define RC_IM_NO_MORE_ENTRIES 303
 
+#define RC_READ_FAIL 100
+#define RC_CANNT_SET_POINTER 101
+#define RC_FILE_ALREADY_EXIST 102
+#define RC_PAGE_OUTOF_RANGE 103
+
+
 /* holder for error messages */
 extern char *RC_message;
 
