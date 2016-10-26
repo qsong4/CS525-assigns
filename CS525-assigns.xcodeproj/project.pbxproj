@@ -19,6 +19,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9A8012771DBBB229004663BA /* Assignment2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assignment2; sourceTree = "<group>"; };
 		9AD63F581D78FEA400B9F5A0 /* CS525-assigns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CS525-assigns"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD63F671D79C4FC00B9F5A0 /* Assignment1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assignment1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,6 +54,7 @@
 		9AD63F5A1D78FEA400B9F5A0 /* CS525-assigns */ = {
 			isa = PBXGroup;
 			children = (
+				9A8012771DBBB229004663BA /* Assignment2 */,
 				9AD63F671D79C4FC00B9F5A0 /* Assignment1 */,
 			);
 			path = "CS525-assigns";
